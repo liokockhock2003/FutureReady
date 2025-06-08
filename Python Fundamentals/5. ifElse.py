@@ -1,3 +1,15 @@
+# Imagine python decide whether to bring umbrella or not
+raining = True
+
+if raining:
+    print("Bring an umbrella.")
+else:
+    print("Wear sunglasses.")
+
+
+
+
+
 # We assign the value 85 to the variable 'score'
 score = 85
 

@@ -1,0 +1,9 @@
+# Look at the code below and guess what it will print:
+
+x = 10
+y = 3
+
+print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
