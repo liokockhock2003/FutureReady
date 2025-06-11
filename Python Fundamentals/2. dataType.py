@@ -5,7 +5,8 @@ age = 15
 height = 1.65
 
 # Declare a string (text) (string/text)
-name = "Ali"
+name = "My name is Ali"
+weight = "50"
 
 # Declare a boolean (boolean: True or False)
 is_student = True
@@ -15,6 +16,7 @@ is_student = True
 print(name)
 print(age, "years old")
 print(height, "m")
+print(float(weight), "kg" )
 print(is_student)
 
 # Print the datatype of the variable declared

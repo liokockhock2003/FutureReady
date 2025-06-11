@@ -1,9 +1,15 @@
-# Try to get different output each time you run the code by changin the score value
-score = 80
+# assign Score to 85
+score = ___
 
-if score >= 90:
-    print("You got an A!")
-elif score >= 70:
-    print("You got a B!")
+
+# if score is more than or equal to 90 print "Grade A"
+if _________:
+    print("_________")
+    
+# elif score is more than or equal to 70 print "Grade B"
+elif ________ :
+    print("________")
+
+# else print "Keep Trying"
 else:
-    print("Keep trying!")
+    print("_________")

@@ -1,9 +1,9 @@
-# Fill in the Wrong comparison operator to make each statement False.
+# Fill in the correct comparison operator to make each statement True or False
+x = 7
+y = 12
 
-a = 20
-b = 15
-
-# Fill in the blank
-print(a ____ b)  # should print True
-print(a ____ 20) # should print True
-print(b ____ a)  # should print True
+print(x ___ y) #True
+print(x ___ 9) #False
+print(x ___ 7) #True
+print(y ___ 5) #True
+print(y ___ 15) #True

@@ -4,7 +4,7 @@ age = _______         # Fill with your age
 height = _______      # Fill with your height in meters  
 is_student = _______  # Are you a student? (True/False)
 
-print("Hi, my name is", name)
-print("I am", age, "years old.")
-print("My height is", height)
-print("Student:", is_student)
+# Print: Hi, my name is ___
+# Print: I am __ years old
+# Print: My height is ___ m
+# Print: Student: True

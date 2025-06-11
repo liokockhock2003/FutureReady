@@ -1,57 +1,34 @@
 import tkinter as tk
 
-# This variable will hold the math expression
-expression = ""
+# Declare expression global variable to hold the math expression
+
+
 
 # Function to update expression when a button is pressed
 def press(key):
-    global expression
+    # Declare expression global variable inside this function
+    global ______
     expression += str(key)
-    equation.set(expression)  # show updated expression
+    displayExpression.set(expression)  # show updated expression
 
+# Function to calculate the expression once "=" button is clicked
 def calculate():
-    global expression
-    try:
-        # Cover selection, Basic math, Data Type, Comparison
-        # Build the logical math operation by using Basic math operators,
-        # If/Else and Comparison Operators.
-        # Make sure the datatype of the num1, num2 is cast to Float.
-        
-        # A problem: In this example we have to use float casting, but
-        #            we didn't teach them in the fundamentals
-        
-#------------------------------------------------------------------------------------------------------------------------------------------------
-        # Detect operator and split the expression
-        if '+' in expression:
-            num1, num2 = expression.split('+')
-            result = float(num1) + float(num2)
-        elif '-' in expression:
-            num1, num2 = expression.split('-')
-            result = float(num1) - float(num2)
-        elif '*' in expression:
-            num1, num2 = expression.split('*')
-            result = float(num1) * float(num2)
-        elif '/' in expression:
-            num1, num2 = expression.split('/')
-            if float(num2) == 0:
-                raise ZeroDivisionError
-            result = float(num1) / float(num2)
-        else:
-            result = "Error"
+    # Declare expression global variable inside this function
+    global ______
+    # Build the logical math operation by using Python Fundamentals
+    #------------------------------------------------------------------------------------------------------------------------------------------------
+    # Use if/elif/else to determine whether which operators (+ or - or * or /) exist in the expression and
+    # calculate the number (float) accordingly
+    
+    #------------------------------------------------------------------------------------------------------------------------------------------------
 
-        equation.set(str(result))
-        expression = str(result)  # allow chaining
-#------------------------------------------------------------------------------------------------------------------------------------------------
-    except:
-        equation.set("Error")
-        expression = ""
 
 
 # Function to clear the screen
 def clear():
     global expression
     expression = ""
-    equation.set("")
+    displayExpression.set("")
 
 
 # Create the main window
@@ -60,42 +37,32 @@ window.title("Simple Calculator")
 window.geometry("300x400")
 
 # StringVar to update text entry automatically
-equation = tk.StringVar()
+displayExpression = tk.StringVar()
 
-# Entry box to display expressions
-entry = tk.Entry(window, textvariable=equation, font=('Arial', 20), bd=10, insertwidth=2, width=14, borderwidth=4)
+# Entry box to displayExpression expressions
+entry = tk.Entry(window, textvariable=displayExpression, font=('Arial', 20), bd=10, insertwidth=2, width=14, borderwidth=4)
 entry.grid(row=0, column=0, columnspan=4)
 
 
-# Build the numbers and operators of the caculator
-# by using "Buttons" Array that stores the numbers and operators
-# declare row = 1 and col = 0 and use for loop to access each element in "Buttons" array
+# Build the Numbers and Operators layout of the Calculator
 #------------------------------------------------------------------------------------------------------------------------------------------------
-# Button text layout
-buttons = [
-    '7', '8', '9', '/',
-    '4', '5', '6', '*',
-    '1', '2', '3', '-',
-    '0', '.', '=', '+'
-]
+# Declare "Buttons" lists that stores the Numbers and Operators
 
-# Create buttons using loop
-row = 1
-col = 0
 
-# Cover For loop, Array, Comparison and Basic Math
-for button in buttons:
-    if button == '=':
-        action = calculate
-    else:
-        action = lambda x=button: press(x)
-        
-    tk.Button(window, text=button, padx=20, pady=20, font=('Arial', 14), command=action).grid(row=row, column=col)
-    
-    col += 1
-    if col > 3:
-        col = 0
-        row += 1
+
+
+# Declare row = 1 and col = 0 and use for loop to access each element in "Buttons" list
+
+
+
+# Use For Loop to iterate through the "Buttons" list and assign each button their respective function
+
+
+
+
+
+#  sample code to assign the action(function) to each button and style it accordingly
+#  tk.Button(window, text=button, padx=20, pady=20, font=('Arial', 14), command=action).grid(row=row, column=col)
 #------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Clear button

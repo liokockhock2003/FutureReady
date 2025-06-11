@@ -1,10 +1,9 @@
 # Some parts of the code below are missing. Fill in the blanks to make the math correct.
+# Assign some value to a and b
+a = ___
+b = ___
 
-a = 15
-b = 4
-
-# Fill in the blanks
-print("Addition:", a ___ b)
-print("Subtraction:", a ___ b)
-print("Multiplication:", a ___ b)
-print("Division:", a ___ b)
+# Print Addition of a and b
+# Print Subtraction of a and b
+# Print Multiplication of a and b
+# Print Division of a and b

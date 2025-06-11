@@ -1,6 +1,5 @@
 # We assign the value 5 to variable x
 x = 5
-
 # We assign the value 8 to variable y
 y = 8
 

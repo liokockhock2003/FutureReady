@@ -1,7 +1,7 @@
-# Create an array (list) of fruits
+# Create a lists of fruits
 fruits = ["apple", "banana", "orange", "grape"]
 
-# Print the whole array
+# Print the whole list
 print("All fruits:", fruits)
 
 # Accessing individual elements (index starts at 0)
